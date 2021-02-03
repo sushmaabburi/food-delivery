@@ -61,11 +61,38 @@
 .online_food_delivery_box{
    width:64%;
    margin-top: 50px;
-   margin-left: 50px;
+   margin-left: 20px;
    margin-right: 50px;
    margin-bottom: 60px;
    padding: 20px 60px;
    background-color: #d4c0b9;
    box-shadow: 3px 5px 10px #714c4a;
 
+}
+.result_box{
+    margin-top: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    background-color: #d4c0b9;
+    box-shadow: 3px 5px 10px #8BC34A;
+}
+.result_box_text{
+    margin-top: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    background-color: #d4c0b9;
+    box-shadow: 3px 5px 10px #8BC34A;
+}
+.result_box_text span{
+    margin-top: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    background-color: #d4c0b9;
+    box-shadow: 3px 5px 10px #8BC34A;
 }
