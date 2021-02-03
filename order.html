@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="order.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html">Services</a></li>
+            <li class="item"><a href="index.html">Our Clients</a></li>
+            <li class="item"><a href="index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        
+        <div class="online_food_delivery_box animated bounceInDown" id="input_box" >
+          <h3>  Food Delivery Form </h3><br>
+        <form action="#">
+          <div class="form-group">
+             <select class="form-control" id="non-veg" onchange="finalCost()">
+              <option value="0">NON-VEG items</option>
+              <option value="1">Hyderabadi chicken Dum Biryani</option>
+              <option value="2">Egg Biryani</option>
+              <option value="3">Mutton Biryani</option>
+              <option value="4">prawns Biryani</option>
+              <option value="5">Fish Biryani</option>
+              <option value="6">Mutton keema Biryani</option>
+               
+             </select>
+             <br><br>
+
+             <select class="form-control" id="veg" onchange="finalCost()">
+              <option value="0">VEG items</option>
+             <option value="1">Vegetable Dum Biryani</option>
+             <option value="2">Panner Biryani</option>
+             <option value="3">Soya chunks Biryani </option>
+               <option value="4">Veg rice</option>
+             </select><br><br>
+             <select class="form-control" id="Snack" onchange="finalCost()">
+               <option value="0">Snack items.</option>
+              <option value="1">Burger</option>
+              <option value="2">Chicken Roll</option>
+              <option value="3">Veg Roll</option>
+              <option value="4">Panner Roll</option>
+              <option value="5">French Fries</option>
+             </select><br><br>
+             <select class="form-control" id="specialdrink">
+               <option value="0">Want any special drink?</option>
+               <option value=2>Yes</option>
+               <option value="0">No</option>
+             </select>
+             <br><br>
+             <textarea  name="Address" rows="3" cols="50" id="Delivery_area">Delivery Location
+               
+             </textarea>
+           </div>
+              
+             <div class="form-group">
+                  <label>Total Cost ($) : </label>
+                  <span id="result" style="background-color: #8c7269;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+                  <input type="button" value="SUBMIT" class="btn btn-primary" style="float: center" id="ok" onclick="ok_result()">
+              </div>  
+             
+          </div>
+        </form>
+
+        <div class="result_box animated zoomIn" style="display: none;" id="okResult">
+          <h3 class="result_box_text" id="ok_text"> Your order is successfully submitted. Please keep patience, we will come to you soon.<br><br><span> --  Thank You  -- </span></h3><br><br>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
